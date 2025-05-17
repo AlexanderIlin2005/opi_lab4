@@ -1,0 +1,327 @@
+plugins {
+    id 'java'
+    id 'war'
+    id 'distribution'
+}
+
+group = 'sasailin'
+version = '1.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
+    testImplementation 'com.h2database:h2:2.2.224'
+
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+
+    compileOnly 'javax:javaee-api:8.0'
+
+    implementation 'commons-codec:commons-codec:1.11'
+    implementation 'io.jsonwebtoken:jjwt:0.9.1'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.2'
+
+    implementation 'javax.persistence:javax.persistence-api:2.2'
+    implementation 'org.postgresql:postgresql:42.5.1'
+    implementation 'org.hibernate:hibernate-core:5.4.20.Final'
+    implementation 'org.hibernate.validator:hibernate-validator:6.1.6.Final'
+}
+
+tasks.withType(JavaCompile) {
+    options.annotationProcessorGeneratedSourcesDirectory = file("$buildDir/generated/sources/annotationProcessor/java/main")
+}
+
+war {
+    archiveFileName = 'lab4.war'
+}
+
+// =============== 1) compile (done)================
+
+// Псевдоним для совместимости: ./gradlew compile будет вызывать compileJavaTask
+tasks.register('compile') {
+    group = 'build'
+    description = 'Алиас для compileJavaTask'
+    dependsOn 'compileJavaTask'
+}
+
+task compileJavaTask {
+    group = 'build'
+    description = 'Компиляция исходных кодов проекта'
+    dependsOn 'compileJava' // Задача зависит от стандартной задачи compileJava
+}
+
+// =============== 2) build (done)================
+
+tasks.register('build_') {
+    group = 'build'
+    description = 'Алиас для buildProject'
+    dependsOn 'buildProject'
+}
+
+task buildProject {
+    dependsOn compileJavaTask // Обеспечиваем зависимость от compileJavaTask
+    dependsOn war // Включаем создание war-архива в build
+    doLast {
+        println 'Проект собран и упакован.'
+    }
+}
+
+// =============== 3) clean(done) ================
+clean {
+    doLast {
+        delete rootProject.buildDir
+        println 'Очистка завершена.'
+    }
+}
+
+// =============== 4) test (done in gradle, tests must be written)================
+test {
+    useJUnitPlatform() // обязательно для JUnit 5
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+    dependsOn compileJavaTask // Зависимость от компиляции перед тестами
+}
+
+// =============== 5) music (done)================
+task music {
+    dependsOn buildProject
+    group = 'custom'
+    description = 'Воспроизведение музыки после сборки'
+    doLast {
+        println '🎵 Завершено! Воспроизведение музыки...'
+        def os = System.getProperty("os.name").toLowerCase()
+        if (os.contains("windows")) {
+            exec { commandLine 'cmd', '/c', 'start', 'music.mp3' }
+        } else if (os.contains("mac")) {
+            exec { commandLine 'open', 'music.mp3' }
+        } else {
+            exec { commandLine 'xdg-open', 'music.mp3' }
+        }
+    }
+}
+
+// =============== 6) native2ascii (done)================
+task native2asciiAll {
+    group = 'conversion'
+    description = 'Конвертация всех JSON-файлов локализации в формат ASCII для тестирования.'
+
+    def srcDir = file('src/main/angular/lab-app/src/assets/i18n')
+    def destDir = file("$buildDir/native2ascii/i18n/")
+
+    inputs.dir srcDir
+    outputs.dir destDir
+
+    doLast {
+        destDir.mkdirs()
+
+        fileTree(dir: srcDir, include: '*.json').each { File srcFile ->
+            def destFileName = srcFile.name.replace('.json', '.properties')
+            def destFile = new File(destDir, destFileName)
+
+            println "Конвертация: ${srcFile.name} -> ${destFile.name}"
+
+            exec {
+                commandLine 'native2ascii', '-encoding', 'UTF-8', srcFile.absolutePath, destFile.absolutePath
+            }
+        }
+    }
+}
+
+
+
+
+// =============== 7) xml (done) ================
+task xml {
+    group = 'verification'
+    description = 'Проверка всех XML файлов на валидность'
+    doLast {
+        fileTree(dir: 'src', include: '**/*.xml').each { File xmlFile ->
+            println "Валидация: ${xmlFile}"
+            try {
+                def factory = javax.xml.parsers.DocumentBuilderFactory.newInstance()
+                def builder = factory.newDocumentBuilder()
+                builder.parse(xmlFile)
+            } catch (Exception e) {
+                println "❌ XML invalid: ${xmlFile}"
+            }
+        }
+    }
+}
+
+// =============== 8) doc (done) ================
+task doc {
+    dependsOn javadoc
+    doLast {
+        def manifestFile = file("$buildDir/tmp/MANIFEST.MF")
+        manifestFile.parentFile.mkdirs()
+        def files = fileTree('src').matching { include '**/*.java' }
+
+        manifestFile.withWriter { writer ->
+            files.each { f ->
+                def relPath = project.relativePath(f)
+                def md5 = f.bytes.encodeHex().toString().substring(0, 32)
+                def sha1 = f.bytes.encodeHex().toString().substring(0, 40)
+                writer.println("${relPath}-MD5: ${md5}")
+                writer.println("${relPath}-SHA1: ${sha1}")
+
+                // Вывод в терминал:
+                println "${relPath}"
+                println "  MD5 : ${md5}"
+                println "  SHA1: ${sha1}"
+            }
+        }
+
+        println 'MD5, SHA-1 и Javadoc добавлены.'
+    }
+}
+
+
+
+// =============== 9) scp (done) ================
+task scp {
+    dependsOn buildProject
+    doLast {
+        println "Открываю терминал для отправки SCP..."
+
+        commandLine 'open', '-a', 'Terminal', './scp_upload.sh'
+    }
+}
+
+
+
+
+// =============== 10) env ================
+task env {
+    def params = file('env.properties').readLines()
+    doLast {
+        javaexec {
+            executable = params.find { it.startsWith('java=') }?.split('=')[1]
+            jvmArgs = params.findAll { it.startsWith('args=') }*.split('=')[1]
+            classpath = sourceSets.main.runtimeClasspath
+            if (project.hasProperty("mainClassName")) {
+                mainClass = mainClassName
+            } else {
+                println "mainClassName не задан — запуск пропущен."
+            }
+        }
+    }
+}
+
+// =============== 11) report (done) ================
+task report {
+    dependsOn test
+    group = 'verification'
+    description = 'Сохраняет JUnit-отчет, добавляет его в Git и делает коммит.'
+
+    doLast {
+        def reportsDir = file("build/test-results/test")
+        def reportFiles = reportsDir.listFiles().findAll { it.name.startsWith("TEST-") && it.name.endsWith(".xml") }
+
+        if (!file(".git").exists()) {
+            println "⚠️  Git-репозиторий не найден. Пропускаем git add/commit."
+            reportFiles.each { println " - ${it}" }
+            return
+        }
+
+        if (reportFiles && reportFiles.every { !it.text.contains('<failure') && !it.text.contains('<error') }) {
+            reportFiles.each { file ->
+                exec {
+                    commandLine 'git', 'add', file.absolutePath
+                }
+            }
+
+            exec {
+                commandLine 'git', 'commit', '-m', '✅ Добавлен отчет о прохождении тестов (JUnit XML)'
+            }
+
+            println "\n📄 Отчеты JUnit успешно сохранены и закоммичены:"
+            reportFiles.each { println " - ${it}" }
+
+        } else {
+            println "\n❌ Тесты не прошли успешно. Отчет не сохранен в Git."
+            reportFiles.each { println " - ${it.name} содержит ошибки или сбои." }
+        }
+    }
+}
+
+
+
+// =============== 12) alt ================
+task alt {
+    dependsOn buildProject
+    doLast {
+        def altSrc = file('src_alt')
+        copy {
+            from 'src'
+            into altSrc
+            include '**/*.java'
+            filter { line -> line.replaceAll('Main', 'MainAlt').replaceAll('myVar', 'myAltVar') }
+        }
+        println 'Создана альтернативная версия кода.'
+    }
+}
+
+// =============== 13) history ================
+task history {
+    doLast {
+        def success = false
+        while (!success) {
+            def result = exec {
+                ignoreExitValue = true
+                commandLine './gradlew', 'compileJava'
+            }
+            if (result.exitValue == 0) {
+                println "✅ Найдена работающая версия."
+                success = true
+            } else {
+                exec {
+                    commandLine 'git', 'reset', '--hard', 'HEAD~1'
+                }
+                println "🔁 Откат на предыдущую версию..."
+            }
+        }
+    }
+}
+
+// =============== 14) team ================
+task team {
+    doLast {
+        (1..2).each {
+            exec { commandLine 'git', 'checkout', "HEAD~${it}" }
+            exec { commandLine './gradlew', 'build' }
+            copy {
+                from 'build/libs'
+                into "teamBuilds/rev${it}"
+                include '*.jar'
+            }
+        }
+        ant.zip(destfile: "teamBuilds/team.zip", basedir: "teamBuilds")
+        println 'Создан zip-архив с двумя ревизиями.'
+    }
+}
+
+// =============== 15) diff ================
+task diff {
+    doLast {
+        def paramFile = file("exclude_classes.txt").readLines()
+        def diffOutput = new ByteArrayOutputStream()
+        exec {
+            commandLine 'git', 'diff', '--name-only'
+            standardOutput = diffOutput
+        }
+        def changedFiles = diffOutput.toString().split('\n')
+        if (changedFiles.every { f -> paramFile.every { !f.contains(it) } }) {
+            exec { commandLine 'git', 'add', '.' }
+            exec { commandLine 'git', 'commit', '-m', 'Автоматический коммит допустимых изменений' }
+        }
+    }
+}

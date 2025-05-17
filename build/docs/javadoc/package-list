@@ -1,0 +1,12 @@
+lab4.beans
+lab4.database
+lab4.exceptions
+lab4.rest
+lab4.rest.filters.authorization
+lab4.rest.filters.cors
+lab4.rest.json
+lab4.rest.mappers
+lab4.services.auth
+lab4.services.hits
+lab4.utils
+lab4.utils.validation

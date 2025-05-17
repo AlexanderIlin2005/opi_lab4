@@ -1,0 +1,1153 @@
+2025-01-11 11:40:09,265 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final
+2025-01-11 11:40:09,581 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final
+2025-01-11 11:40:09,588 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2025-01-11 11:40:09,654 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 23.0.0.Final (WildFly Core 15.0.0.Final) starting
+2025-01-11 11:40:09,655 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.lwawt.macosx.LWCToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	gopherProxySet = false
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+	java.class.path = /Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/endorsed
+	java.ext.dirs = /Users/sasailin/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+	java.home = /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre
+	java.io.tmpdir = /var/folders/jm/yh8d66r9627c7gms8mbw1cmr0000gn/T/
+	java.library.path = /Users/sasailin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 1.8.0_402-b06
+	java.specification.maintenance.version = 5
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Azul Systems, Inc.
+	java.vendor.url = http://www.azul.com/
+	java.vendor.url.bug = http://www.azul.com/support/
+	java.version = 1.8.0_402
+	java.vm.info = mixed mode
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Azul Systems, Inc.
+	java.vm.version = 25.402-b06
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final
+	jboss.host.name = macbook-air-sasa-2
+	jboss.modules.dir = /Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = macbook-air-sasa-2
+	jboss.qualified.host.name = macbook-air-sasa-2.local
+	jboss.server.base.dir = /Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/standalone
+	jboss.server.config.dir = /Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/standalone/configuration
+	jboss.server.data.dir = /Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/standalone/data
+	jboss.server.deploy.dir = /Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/standalone/data/content
+	jboss.server.log.dir = /Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/standalone/log
+	jboss.server.name = macbook-air-sasa-2
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/standalone/tmp
+	jdk.vendor.version = Zulu 8.76.0.17-CA-macos-aarch64
+	line.separator = 
+
+	logging.configuration = file:/Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/standalone/configuration/logging.properties
+	module.path = /Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/modules
+	org.jboss.boot.log.file = /Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = aarch64
+	os.name = Mac OS X
+	os.version = 15.2
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.class.path = /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/cat.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/classes
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/jboss-modules.jar -mp /Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final -Djboss.server.base.dir=/Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = RU
+	user.dir = /Users/sasailin/Desktop/Web_programming/web-lab4
+	user.home = /Users/sasailin
+	user.language = ru
+	user.name = sasailin
+	user.timezone = Europe/Moscow
+2025-01-11 11:40:09,655 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/standalone/configuration/logging.properties 
+2025-01-11 11:40:10,084 INFO  [org.wildfly.security] (ServerService Thread Pool -- 26) ELY00001: WildFly Elytron version 1.15.1.Final
+2025-01-11 11:40:10,254 WARN  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 11) WFLYCTL0033: Extension 'security' is deprecated and may not be supported in future versions
+2025-01-11 11:40:10,389 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2025-01-11 11:40:10,405 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 13) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2025-01-11 11:40:10,466 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2025-01-11 11:40:10,475 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.8.4.Final
+2025-01-11 11:40:10,492 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.8.4.Final
+2025-01-11 11:40:10,521 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 53) WFLYCLINF0001: Activating Infinispan subsystem.
+2025-01-11 11:40:10,523 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 63) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2025-01-11 11:40:10,524 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 54) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2025-01-11 11:40:10,529 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2025-01-11 11:40:10,531 INFO  [org.wildfly.extension.microprofile.jwt.smallrye._private] (ServerService Thread Pool -- 64) WFLYJWT0001: Activating WildFly MicroProfile JWT Subsystem
+2025-01-11 11:40:10,536 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 52) WFLYHEALTH0001: Activating Base Health Subsystem
+2025-01-11 11:40:10,537 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 55) WFLYRS0016: RESTEasy version 3.15.1.Final
+2025-01-11 11:40:10,537 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 66) WFLYNAM0001: Activating Naming Subsystem
+2025-01-11 11:40:10,538 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2025-01-11 11:40:10,538 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 65) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2025-01-11 11:40:10,540 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 72) WFLYSEC0002: Activating Security Subsystem
+2025-01-11 11:40:10,543 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.4.27.Final)
+2025-01-11 11:40:10,546 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 62) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2025-01-11 11:40:10,553 INFO  [org.jboss.as.security] (MSC service thread 1-4) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00007
+2025-01-11 11:40:10,555 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 60) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2025-01-11 11:40:10,565 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.2.5.Final starting
+2025-01-11 11:40:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2025-01-11 11:40:10,635 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2025-01-11 11:40:10,659 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+2025-01-11 11:40:10,659 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2025-01-11 11:40:10,677 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.20.Final
+2025-01-11 11:40:10,712 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY00023: KeyStore file '/Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/standalone/configuration/application.keystore' does not exist. Used blank.
+2025-01-11 11:40:10,713 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2025-01-11 11:40:10,726 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2025-01-11 11:40:10,726 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2025-01-11 11:40:10,728 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2025-01-11 11:40:10,729 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) Queuing requests.
+2025-01-11 11:40:10,730 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2025-01-11 11:40:10,742 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY01084: KeyStore /Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2025-01-11 11:40:10,801 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-01-11 11:40:10,839 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2025-01-11 11:40:10,871 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2025-01-11 11:40:10,972 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2025-01-11 11:40:10,983 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-3) WFLYDM0111: Keystore /Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2025-01-11 11:40:10,987 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/sasailin/Desktop/Web_programming/web-lab4/wildfly-23.0.0.Final/standalone/deployments
+2025-01-11 11:40:10,995 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "lab4.war" (runtime-name: "lab4.war")
+2025-01-11 11:40:11,012 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2025-01-11 11:40:11,089 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.4.2.Final (Apache CXF 3.3.9) 
+2025-01-11 11:40:12,355 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for default
+2025-01-11 11:40:12,508 INFO  [org.jipijapa] (MSC service thread 1-3) JIPIORMV53020253: Second level cache enabled for lab4.war#default
+2025-01-11 11:40:12,614 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment lab4.war
+2025-01-11 11:40:12,698 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-8) HV000001: Hibernate Validator 6.0.22.Final
+2025-01-11 11:40:12,805 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'UserRepository' in deployment unit 'deployment "lab4.war"' are as follows:
+
+	java:global/lab4/UserRepository!lab4.database.UserRepository
+	java:app/lab4/UserRepository!lab4.database.UserRepository
+	java:module/UserRepository!lab4.database.UserRepository
+	java:global/lab4/UserRepository
+	java:app/lab4/UserRepository
+	java:module/UserRepository
+
+2025-01-11 11:40:12,805 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'AuthService' in deployment unit 'deployment "lab4.war"' are as follows:
+
+	java:global/lab4/AuthService!lab4.services.auth.AuthService
+	java:app/lab4/AuthService!lab4.services.auth.AuthService
+	java:module/AuthService!lab4.services.auth.AuthService
+	java:global/lab4/AuthService
+	java:app/lab4/AuthService
+	java:module/AuthService
+
+2025-01-11 11:40:12,805 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'HitService' in deployment unit 'deployment "lab4.war"' are as follows:
+
+	java:global/lab4/HitService!lab4.services.hits.HitService
+	java:app/lab4/HitService!lab4.services.hits.HitService
+	java:module/HitService!lab4.services.hits.HitService
+	java:global/lab4/HitService
+	java:app/lab4/HitService
+	java:module/HitService
+
+2025-01-11 11:40:12,806 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'HitRepository' in deployment unit 'deployment "lab4.war"' are as follows:
+
+	java:global/lab4/HitRepository!lab4.database.HitRepository
+	java:app/lab4/HitRepository!lab4.database.HitRepository
+	java:module/HitRepository!lab4.database.HitRepository
+	java:global/lab4/HitRepository
+	java:app/lab4/HitRepository
+	java:module/HitRepository
+
+2025-01-11 11:40:12,806 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'TokenService' in deployment unit 'deployment "lab4.war"' are as follows:
+
+	java:global/lab4/TokenService!lab4.services.auth.TokenService
+	java:app/lab4/TokenService!lab4.services.auth.TokenService
+	java:module/TokenService!lab4.services.auth.TokenService
+	java:global/lab4/TokenService
+	java:app/lab4/TokenService
+	java:module/TokenService
+
+2025-01-11 11:40:12,914 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 79) ISPN000128: Infinispan version: Infinispan 'Corona Extra' 11.0.9.Final
+2025-01-11 11:40:12,931 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-8) No shutdown hook registered: Please call close() manually on application shutdown.
+2025-01-11 11:40:12,940 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 79) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'lab4.war#default'
+2025-01-11 11:40:12,951 INFO  [org.infinispan.CONFIG] (MSC service thread 1-4) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2025-01-11 11:40:12,952 INFO  [org.infinispan.CONFIG] (MSC service thread 1-4) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2025-01-11 11:40:12,963 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 79) HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2025-01-11 11:40:13,038 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 79) HHH000412: Hibernate Core {5.3.20.Final}
+2025-01-11 11:40:13,040 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 79) HHH000206: hibernate.properties not found
+2025-01-11 11:40:13,044 INFO  [org.jipijapa] (MSC service thread 1-7) JIPIORMV53020253: Second level cache enabled for lab4.war#default
+2025-01-11 11:40:13,056 INFO  [org.infinispan.PERSISTENCE] (ServerService Thread Pool -- 78) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+2025-01-11 11:40:13,085 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-7) WFLYRS0018: Explicit usage of Jackson annotation in a Jakarta RESTful Web Services deployment; the system will disable Jakarta JSON Binding processing for the current deployment. Consider setting the 'resteasy.preferJacksonOverJsonB' property to 'false' to restore Jakarta JSON Binding.
+2025-01-11 11:40:13,090 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.5)
+2025-01-11 11:40:13,110 INFO  [org.jboss.weld.Version] (MSC service thread 1-7) WELD-000900: 3.1.6 (Final)
+2025-01-11 11:40:13,166 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = lab4.war_org.postgresql.Driver_42_5
+2025-01-11 11:40:13,198 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 79) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2025-01-11 11:40:13,239 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+2025-01-11 11:40:13,280 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 79) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'lab4.war#default'
+2025-01-11 11:40:13,395 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 79) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-11 11:40:13,468 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 79) Envers integration enabled? : true
+2025-01-11 11:40:14,128 INFO  [stdout] (ServerService Thread Pool -- 79) Hibernate: 
+2025-01-11 11:40:14,128 INFO  [stdout] (ServerService Thread Pool -- 79)     
+2025-01-11 11:40:14,128 INFO  [stdout] (ServerService Thread Pool -- 79)     create table Hit (
+2025-01-11 11:40:14,128 INFO  [stdout] (ServerService Thread Pool -- 79)        id bigint not null,
+2025-01-11 11:40:14,128 INFO  [stdout] (ServerService Thread Pool -- 79)         r integer not null,
+2025-01-11 11:40:14,130 INFO  [stdout] (ServerService Thread Pool -- 79)         success boolean not null,
+2025-01-11 11:40:14,130 INFO  [stdout] (ServerService Thread Pool -- 79)         x integer not null,
+2025-01-11 11:40:14,130 INFO  [stdout] (ServerService Thread Pool -- 79)         y float not null,
+2025-01-11 11:40:14,130 INFO  [stdout] (ServerService Thread Pool -- 79)         owner varchar(255),
+2025-01-11 11:40:14,130 INFO  [stdout] (ServerService Thread Pool -- 79)         primary key (id)
+2025-01-11 11:40:14,130 INFO  [stdout] (ServerService Thread Pool -- 79)     )
+2025-01-11 11:40:14,134 INFO  [stdout] (ServerService Thread Pool -- 79) Hibernate: 
+2025-01-11 11:40:14,134 INFO  [stdout] (ServerService Thread Pool -- 79)     
+2025-01-11 11:40:14,134 INFO  [stdout] (ServerService Thread Pool -- 79)     create table userr (
+2025-01-11 11:40:14,135 INFO  [stdout] (ServerService Thread Pool -- 79)        username varchar(255) not null,
+2025-01-11 11:40:14,135 INFO  [stdout] (ServerService Thread Pool -- 79)         password varchar(255),
+2025-01-11 11:40:14,135 INFO  [stdout] (ServerService Thread Pool -- 79)         primary key (username)
+2025-01-11 11:40:14,135 INFO  [stdout] (ServerService Thread Pool -- 79)     )
+2025-01-11 11:40:14,137 INFO  [stdout] (ServerService Thread Pool -- 79) Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+2025-01-11 11:40:14,138 INFO  [stdout] (ServerService Thread Pool -- 79) Hibernate: 
+2025-01-11 11:40:14,138 INFO  [stdout] (ServerService Thread Pool -- 79)     
+2025-01-11 11:40:14,138 INFO  [stdout] (ServerService Thread Pool -- 79)     alter table Hit 
+2025-01-11 11:40:14,138 INFO  [stdout] (ServerService Thread Pool -- 79)        add constraint FKpd3d1kd9w3c0vs8it9um0jw4a 
+2025-01-11 11:40:14,138 INFO  [stdout] (ServerService Thread Pool -- 79)        foreign key (owner) 
+2025-01-11 11:40:14,138 INFO  [stdout] (ServerService Thread Pool -- 79)        references userr
+2025-01-11 11:40:14,788 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 80) RESTEASY002225: Deploying javax.ws.rs.core.Application: class lab4.rest.RestApplication
+2025-01-11 11:40:14,847 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 80) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2025-01-11 11:40:14,904 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "lab4.war" (runtime-name : "lab4.war")
+2025-01-11 11:40:14,957 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-01-11 11:40:14,959 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 23.0.0.Final (WildFly Core 15.0.0.Final) started in 5980ms - Started 554 of 735 services (349 services are lazy, passive or on-demand)
+2025-01-11 11:40:14,960 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2025-01-11 11:40:14,961 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2025-01-11 11:40:48,242 INFO  [stdout] (default task-1) Hibernate: 
+2025-01-11 11:40:48,243 INFO  [stdout] (default task-1)     select
+2025-01-11 11:40:48,243 INFO  [stdout] (default task-1)         user0_.username as username1_1_0_,
+2025-01-11 11:40:48,243 INFO  [stdout] (default task-1)         user0_.password as password2_1_0_ 
+2025-01-11 11:40:48,243 INFO  [stdout] (default task-1)     from
+2025-01-11 11:40:48,243 INFO  [stdout] (default task-1)         userr user0_ 
+2025-01-11 11:40:48,243 INFO  [stdout] (default task-1)     where
+2025-01-11 11:40:48,243 INFO  [stdout] (default task-1)         user0_.username=?
+2025-01-11 11:40:48,278 INFO  [stdout] (default task-1) Hibernate: 
+2025-01-11 11:40:48,279 INFO  [stdout] (default task-1)     insert 
+2025-01-11 11:40:48,279 INFO  [stdout] (default task-1)     into
+2025-01-11 11:40:48,279 INFO  [stdout] (default task-1)         userr
+2025-01-11 11:40:48,279 INFO  [stdout] (default task-1)         (password, username) 
+2025-01-11 11:40:48,279 INFO  [stdout] (default task-1)     values
+2025-01-11 11:40:48,279 INFO  [stdout] (default task-1)         (?, ?)
+2025-01-11 11:40:48,435 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-1) HHH000397: Using ASTQueryTranslatorFactory
+2025-01-11 11:40:48,502 INFO  [stdout] (default task-1) Hibernate: 
+2025-01-11 11:40:48,502 INFO  [stdout] (default task-1)     select
+2025-01-11 11:40:48,503 INFO  [stdout] (default task-1)         hit0_.id as id1_0_,
+2025-01-11 11:40:48,503 INFO  [stdout] (default task-1)         hit0_.owner as owner6_0_,
+2025-01-11 11:40:48,503 INFO  [stdout] (default task-1)         hit0_.r as r2_0_,
+2025-01-11 11:40:48,503 INFO  [stdout] (default task-1)         hit0_.success as success3_0_,
+2025-01-11 11:40:48,503 INFO  [stdout] (default task-1)         hit0_.x as x4_0_,
+2025-01-11 11:40:48,503 INFO  [stdout] (default task-1)         hit0_.y as y5_0_ 
+2025-01-11 11:40:48,503 INFO  [stdout] (default task-1)     from
+2025-01-11 11:40:48,503 INFO  [stdout] (default task-1)         Hit hit0_ 
+2025-01-11 11:40:48,503 INFO  [stdout] (default task-1)     where
+2025-01-11 11:40:48,503 INFO  [stdout] (default task-1)         hit0_.owner=?
+2025-01-11 11:41:00,637 INFO  [stdout] (default task-1) Hibernate: 
+2025-01-11 11:41:00,637 INFO  [stdout] (default task-1)     select
+2025-01-11 11:41:00,637 INFO  [stdout] (default task-1)         user0_.username as username1_1_0_,
+2025-01-11 11:41:00,637 INFO  [stdout] (default task-1)         user0_.password as password2_1_0_ 
+2025-01-11 11:41:00,637 INFO  [stdout] (default task-1)     from
+2025-01-11 11:41:00,637 INFO  [stdout] (default task-1)         userr user0_ 
+2025-01-11 11:41:00,637 INFO  [stdout] (default task-1)     where
+2025-01-11 11:41:00,637 INFO  [stdout] (default task-1)         user0_.username=?
+2025-01-11 11:41:00,648 INFO  [stdout] (default task-1) Hibernate: 
+2025-01-11 11:41:00,648 INFO  [stdout] (default task-1)     call next value for hibernate_sequence
+2025-01-11 11:41:00,657 INFO  [stdout] (default task-1) Hibernate: 
+2025-01-11 11:41:00,657 INFO  [stdout] (default task-1)     insert 
+2025-01-11 11:41:00,657 INFO  [stdout] (default task-1)     into
+2025-01-11 11:41:00,657 INFO  [stdout] (default task-1)         Hit
+2025-01-11 11:41:00,657 INFO  [stdout] (default task-1)         (owner, r, success, x, y, id) 
+2025-01-11 11:41:00,657 INFO  [stdout] (default task-1)     values
+2025-01-11 11:41:00,657 INFO  [stdout] (default task-1)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:41:00,673 INFO  [stdout] (default task-1) Hibernate: 
+2025-01-11 11:41:00,674 INFO  [stdout] (default task-1)     select
+2025-01-11 11:41:00,674 INFO  [stdout] (default task-1)         hit0_.id as id1_0_,
+2025-01-11 11:41:00,674 INFO  [stdout] (default task-1)         hit0_.owner as owner6_0_,
+2025-01-11 11:41:00,674 INFO  [stdout] (default task-1)         hit0_.r as r2_0_,
+2025-01-11 11:41:00,674 INFO  [stdout] (default task-1)         hit0_.success as success3_0_,
+2025-01-11 11:41:00,674 INFO  [stdout] (default task-1)         hit0_.x as x4_0_,
+2025-01-11 11:41:00,674 INFO  [stdout] (default task-1)         hit0_.y as y5_0_ 
+2025-01-11 11:41:00,674 INFO  [stdout] (default task-1)     from
+2025-01-11 11:41:00,674 INFO  [stdout] (default task-1)         Hit hit0_ 
+2025-01-11 11:41:00,674 INFO  [stdout] (default task-1)     where
+2025-01-11 11:41:00,674 INFO  [stdout] (default task-1)         hit0_.owner=?
+2025-01-11 11:41:00,676 INFO  [stdout] (default task-1) Hibernate: 
+2025-01-11 11:41:00,677 INFO  [stdout] (default task-1)     select
+2025-01-11 11:41:00,677 INFO  [stdout] (default task-1)         user0_.username as username1_1_0_,
+2025-01-11 11:41:00,677 INFO  [stdout] (default task-1)         user0_.password as password2_1_0_ 
+2025-01-11 11:41:00,677 INFO  [stdout] (default task-1)     from
+2025-01-11 11:41:00,677 INFO  [stdout] (default task-1)         userr user0_ 
+2025-01-11 11:41:00,677 INFO  [stdout] (default task-1)     where
+2025-01-11 11:41:00,677 INFO  [stdout] (default task-1)         user0_.username=?
+2025-01-11 11:41:01,777 INFO  [stdout] (default task-1) Hibernate: 
+2025-01-11 11:41:01,777 INFO  [stdout] (default task-1)     select
+2025-01-11 11:41:01,777 INFO  [stdout] (default task-1)         user0_.username as username1_1_0_,
+2025-01-11 11:41:01,777 INFO  [stdout] (default task-1)         user0_.password as password2_1_0_ 
+2025-01-11 11:41:01,777 INFO  [stdout] (default task-1)     from
+2025-01-11 11:41:01,778 INFO  [stdout] (default task-1)         userr user0_ 
+2025-01-11 11:41:01,778 INFO  [stdout] (default task-1)     where
+2025-01-11 11:41:01,778 INFO  [stdout] (default task-1)         user0_.username=?
+2025-01-11 11:41:01,782 INFO  [stdout] (default task-1) Hibernate: 
+2025-01-11 11:41:01,782 INFO  [stdout] (default task-1)     call next value for hibernate_sequence
+2025-01-11 11:41:01,785 INFO  [stdout] (default task-1) Hibernate: 
+2025-01-11 11:41:01,785 INFO  [stdout] (default task-1)     insert 
+2025-01-11 11:41:01,785 INFO  [stdout] (default task-1)     into
+2025-01-11 11:41:01,785 INFO  [stdout] (default task-1)         Hit
+2025-01-11 11:41:01,786 INFO  [stdout] (default task-1)         (owner, r, success, x, y, id) 
+2025-01-11 11:41:01,786 INFO  [stdout] (default task-1)     values
+2025-01-11 11:41:01,786 INFO  [stdout] (default task-1)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:41:01,798 INFO  [stdout] (default task-1) Hibernate: 
+2025-01-11 11:41:01,798 INFO  [stdout] (default task-1)     select
+2025-01-11 11:41:01,798 INFO  [stdout] (default task-1)         hit0_.id as id1_0_,
+2025-01-11 11:41:01,798 INFO  [stdout] (default task-1)         hit0_.owner as owner6_0_,
+2025-01-11 11:41:01,798 INFO  [stdout] (default task-1)         hit0_.r as r2_0_,
+2025-01-11 11:41:01,798 INFO  [stdout] (default task-1)         hit0_.success as success3_0_,
+2025-01-11 11:41:01,798 INFO  [stdout] (default task-1)         hit0_.x as x4_0_,
+2025-01-11 11:41:01,798 INFO  [stdout] (default task-1)         hit0_.y as y5_0_ 
+2025-01-11 11:41:01,798 INFO  [stdout] (default task-1)     from
+2025-01-11 11:41:01,798 INFO  [stdout] (default task-1)         Hit hit0_ 
+2025-01-11 11:41:01,798 INFO  [stdout] (default task-1)     where
+2025-01-11 11:41:01,798 INFO  [stdout] (default task-1)         hit0_.owner=?
+2025-01-11 11:41:01,799 INFO  [stdout] (default task-1) Hibernate: 
+2025-01-11 11:41:01,800 INFO  [stdout] (default task-1)     select
+2025-01-11 11:41:01,800 INFO  [stdout] (default task-1)         user0_.username as username1_1_0_,
+2025-01-11 11:41:01,800 INFO  [stdout] (default task-1)         user0_.password as password2_1_0_ 
+2025-01-11 11:41:01,800 INFO  [stdout] (default task-1)     from
+2025-01-11 11:41:01,800 INFO  [stdout] (default task-1)         userr user0_ 
+2025-01-11 11:41:01,800 INFO  [stdout] (default task-1)     where
+2025-01-11 11:41:01,800 INFO  [stdout] (default task-1)         user0_.username=?
+2025-01-11 11:43:24,766 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:43:24,766 INFO  [stdout] (default task-3)     select
+2025-01-11 11:43:24,766 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:43:24,766 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:43:24,767 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:43:24,767 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:43:24,767 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:43:24,767 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:43:24,767 INFO  [stdout] (default task-3)     from
+2025-01-11 11:43:24,768 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:43:24,768 INFO  [stdout] (default task-3)     where
+2025-01-11 11:43:24,768 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:43:24,771 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:43:24,771 INFO  [stdout] (default task-3)     select
+2025-01-11 11:43:24,771 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:43:24,771 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:43:24,771 INFO  [stdout] (default task-3)     from
+2025-01-11 11:43:24,771 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:43:24,771 INFO  [stdout] (default task-3)     where
+2025-01-11 11:43:24,771 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:43:41,406 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:43:41,406 INFO  [stdout] (default task-3)     select
+2025-01-11 11:43:41,406 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:43:41,406 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:43:41,406 INFO  [stdout] (default task-3)     from
+2025-01-11 11:43:41,406 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:43:41,406 INFO  [stdout] (default task-3)     where
+2025-01-11 11:43:41,406 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:43:57,074 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:43:57,075 INFO  [stdout] (default task-3)     select
+2025-01-11 11:43:57,075 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:43:57,075 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:43:57,075 INFO  [stdout] (default task-3)     from
+2025-01-11 11:43:57,075 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:43:57,075 INFO  [stdout] (default task-3)     where
+2025-01-11 11:43:57,075 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:43:57,079 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:43:57,079 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:43:57,079 INFO  [stdout] (default task-3)     into
+2025-01-11 11:43:57,079 INFO  [stdout] (default task-3)         userr
+2025-01-11 11:43:57,079 INFO  [stdout] (default task-3)         (password, username) 
+2025-01-11 11:43:57,079 INFO  [stdout] (default task-3)     values
+2025-01-11 11:43:57,079 INFO  [stdout] (default task-3)         (?, ?)
+2025-01-11 11:43:57,118 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:43:57,118 INFO  [stdout] (default task-3)     select
+2025-01-11 11:43:57,118 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:43:57,118 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:43:57,118 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:43:57,118 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:43:57,118 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:43:57,118 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:43:57,118 INFO  [stdout] (default task-3)     from
+2025-01-11 11:43:57,118 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:43:57,118 INFO  [stdout] (default task-3)     where
+2025-01-11 11:43:57,118 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:44:27,892 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:27,893 INFO  [stdout] (default task-3)     select
+2025-01-11 11:44:27,893 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:44:27,893 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:44:27,893 INFO  [stdout] (default task-3)     from
+2025-01-11 11:44:27,893 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:44:27,894 INFO  [stdout] (default task-3)     where
+2025-01-11 11:44:27,894 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:44:27,897 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:27,897 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:44:27,899 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:27,899 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:44:27,899 INFO  [stdout] (default task-3)     into
+2025-01-11 11:44:27,899 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:44:27,900 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:44:27,900 INFO  [stdout] (default task-3)     values
+2025-01-11 11:44:27,900 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:44:27,918 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:27,918 INFO  [stdout] (default task-3)     select
+2025-01-11 11:44:27,918 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:44:27,919 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:44:27,919 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:44:27,919 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:44:27,919 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:44:27,919 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:44:27,919 INFO  [stdout] (default task-3)     from
+2025-01-11 11:44:27,919 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:44:27,919 INFO  [stdout] (default task-3)     where
+2025-01-11 11:44:27,919 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:44:27,922 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:27,922 INFO  [stdout] (default task-3)     select
+2025-01-11 11:44:27,922 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:44:27,922 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:44:27,922 INFO  [stdout] (default task-3)     from
+2025-01-11 11:44:27,922 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:44:27,922 INFO  [stdout] (default task-3)     where
+2025-01-11 11:44:27,922 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:44:32,642 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:32,642 INFO  [stdout] (default task-3)     select
+2025-01-11 11:44:32,642 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:44:32,642 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:44:32,642 INFO  [stdout] (default task-3)     from
+2025-01-11 11:44:32,642 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:44:32,642 INFO  [stdout] (default task-3)     where
+2025-01-11 11:44:32,642 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:44:32,645 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:32,646 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:44:32,647 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:32,647 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:44:32,647 INFO  [stdout] (default task-3)     into
+2025-01-11 11:44:32,647 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:44:32,647 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:44:32,647 INFO  [stdout] (default task-3)     values
+2025-01-11 11:44:32,648 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:44:32,660 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:32,660 INFO  [stdout] (default task-3)     select
+2025-01-11 11:44:32,660 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:44:32,660 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:44:32,660 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:44:32,660 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:44:32,661 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:44:32,661 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:44:32,661 INFO  [stdout] (default task-3)     from
+2025-01-11 11:44:32,661 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:44:32,661 INFO  [stdout] (default task-3)     where
+2025-01-11 11:44:32,661 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:44:32,662 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:32,662 INFO  [stdout] (default task-3)     select
+2025-01-11 11:44:32,662 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:44:32,662 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:44:32,662 INFO  [stdout] (default task-3)     from
+2025-01-11 11:44:32,662 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:44:32,662 INFO  [stdout] (default task-3)     where
+2025-01-11 11:44:32,662 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:44:35,772 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:35,772 INFO  [stdout] (default task-3)     select
+2025-01-11 11:44:35,772 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:44:35,772 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:44:35,772 INFO  [stdout] (default task-3)     from
+2025-01-11 11:44:35,772 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:44:35,772 INFO  [stdout] (default task-3)     where
+2025-01-11 11:44:35,772 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:44:35,775 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:35,775 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:44:35,776 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:35,776 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:44:35,777 INFO  [stdout] (default task-3)     into
+2025-01-11 11:44:35,777 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:44:35,777 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:44:35,777 INFO  [stdout] (default task-3)     values
+2025-01-11 11:44:35,777 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:44:35,792 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:35,793 INFO  [stdout] (default task-3)     select
+2025-01-11 11:44:35,793 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:44:35,793 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:44:35,793 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:44:35,793 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:44:35,793 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:44:35,793 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:44:35,793 INFO  [stdout] (default task-3)     from
+2025-01-11 11:44:35,793 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:44:35,793 INFO  [stdout] (default task-3)     where
+2025-01-11 11:44:35,793 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:44:35,795 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:35,796 INFO  [stdout] (default task-3)     select
+2025-01-11 11:44:35,796 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:44:35,796 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:44:35,796 INFO  [stdout] (default task-3)     from
+2025-01-11 11:44:35,796 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:44:35,796 INFO  [stdout] (default task-3)     where
+2025-01-11 11:44:35,796 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:44:53,424 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:53,425 INFO  [stdout] (default task-3)     select
+2025-01-11 11:44:53,425 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:44:53,425 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:44:53,425 INFO  [stdout] (default task-3)     from
+2025-01-11 11:44:53,425 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:44:53,425 INFO  [stdout] (default task-3)     where
+2025-01-11 11:44:53,426 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:44:53,429 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:53,429 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:44:53,431 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:53,431 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:44:53,431 INFO  [stdout] (default task-3)     into
+2025-01-11 11:44:53,432 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:44:53,432 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:44:53,432 INFO  [stdout] (default task-3)     values
+2025-01-11 11:44:53,432 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:44:53,448 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:53,448 INFO  [stdout] (default task-3)     select
+2025-01-11 11:44:53,448 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:44:53,448 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:44:53,448 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:44:53,448 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:44:53,448 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:44:53,448 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:44:53,448 INFO  [stdout] (default task-3)     from
+2025-01-11 11:44:53,448 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:44:53,448 INFO  [stdout] (default task-3)     where
+2025-01-11 11:44:53,448 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:44:53,450 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:44:53,451 INFO  [stdout] (default task-3)     select
+2025-01-11 11:44:53,451 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:44:53,451 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:44:53,451 INFO  [stdout] (default task-3)     from
+2025-01-11 11:44:53,451 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:44:53,451 INFO  [stdout] (default task-3)     where
+2025-01-11 11:44:53,451 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:25,276 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:25,277 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:25,277 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:25,277 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:25,277 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:25,277 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:25,277 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:25,278 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:25,280 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:25,280 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:45:25,282 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:25,282 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:45:25,282 INFO  [stdout] (default task-3)     into
+2025-01-11 11:45:25,282 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:45:25,282 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:45:25,282 INFO  [stdout] (default task-3)     values
+2025-01-11 11:45:25,282 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:45:25,296 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:25,296 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:25,296 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:45:25,296 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:45:25,296 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:45:25,296 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:45:25,296 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:45:25,296 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:45:25,296 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:25,296 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:45:25,296 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:25,296 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:45:25,298 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:25,298 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:25,298 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:25,298 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:25,298 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:25,298 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:25,298 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:25,298 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:25,591 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:25,591 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:25,591 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:25,591 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:25,591 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:25,591 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:25,591 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:25,591 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:25,594 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:25,594 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:45:25,595 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:25,595 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:45:25,595 INFO  [stdout] (default task-3)     into
+2025-01-11 11:45:25,595 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:45:25,595 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:45:25,595 INFO  [stdout] (default task-3)     values
+2025-01-11 11:45:25,595 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:45:25,606 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:25,606 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:25,606 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:45:25,606 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:45:25,606 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:45:25,606 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:45:25,606 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:45:25,606 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:45:25,606 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:25,607 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:45:25,607 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:25,607 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:45:25,609 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:25,609 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:25,609 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:25,609 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:25,609 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:25,609 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:25,609 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:25,609 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:25,930 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:25,930 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:25,930 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:25,930 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:25,930 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:25,930 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:25,930 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:25,930 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:25,932 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:25,933 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:45:25,934 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:25,934 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:45:25,934 INFO  [stdout] (default task-3)     into
+2025-01-11 11:45:25,934 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:45:25,934 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:45:25,934 INFO  [stdout] (default task-3)     values
+2025-01-11 11:45:25,934 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:45:25,949 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:25,949 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:25,949 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:45:25,949 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:45:25,949 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:45:25,949 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:45:25,949 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:45:25,949 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:45:25,949 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:25,949 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:45:25,949 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:25,949 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:45:25,952 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:25,952 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:25,952 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:25,952 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:25,952 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:25,952 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:25,952 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:25,953 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:26,072 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,072 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:26,072 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:26,072 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:26,072 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:26,072 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:26,072 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:26,072 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:26,074 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,075 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:45:26,076 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,077 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:45:26,077 INFO  [stdout] (default task-3)     into
+2025-01-11 11:45:26,077 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:45:26,077 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:45:26,077 INFO  [stdout] (default task-3)     values
+2025-01-11 11:45:26,077 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:45:26,089 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,089 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:26,089 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:45:26,089 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:45:26,089 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:45:26,089 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:45:26,089 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:45:26,089 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:45:26,089 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:26,089 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:45:26,089 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:26,089 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:45:26,092 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,092 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:26,092 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:26,092 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:26,092 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:26,092 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:26,092 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:26,093 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:26,254 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,254 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:26,254 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:26,254 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:26,254 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:26,254 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:26,254 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:26,255 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:26,257 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,257 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:45:26,259 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,259 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:45:26,259 INFO  [stdout] (default task-3)     into
+2025-01-11 11:45:26,259 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:45:26,259 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:45:26,259 INFO  [stdout] (default task-3)     values
+2025-01-11 11:45:26,259 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:45:26,273 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,273 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:26,273 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:45:26,273 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:45:26,273 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:45:26,273 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:45:26,273 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:45:26,273 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:45:26,273 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:26,273 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:45:26,273 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:26,273 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:45:26,275 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,275 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:26,275 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:26,275 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:26,275 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:26,275 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:26,275 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:26,275 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:26,422 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,422 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:26,422 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:26,422 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:26,422 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:26,422 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:26,422 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:26,422 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:26,425 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,425 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:45:26,427 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,427 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:45:26,427 INFO  [stdout] (default task-3)     into
+2025-01-11 11:45:26,427 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:45:26,427 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:45:26,427 INFO  [stdout] (default task-3)     values
+2025-01-11 11:45:26,427 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:45:26,440 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,440 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:26,440 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:45:26,440 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:45:26,440 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:45:26,440 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:45:26,440 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:45:26,440 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:45:26,440 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:26,440 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:45:26,440 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:26,440 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:45:26,442 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,442 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:26,442 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:26,442 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:26,442 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:26,442 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:26,442 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:26,442 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:26,569 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,569 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:26,569 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:26,569 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:26,569 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:26,569 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:26,569 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:26,569 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:26,570 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,570 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:45:26,571 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,571 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:45:26,571 INFO  [stdout] (default task-3)     into
+2025-01-11 11:45:26,571 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:45:26,571 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:45:26,571 INFO  [stdout] (default task-3)     values
+2025-01-11 11:45:26,571 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:45:26,582 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,582 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:26,582 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:45:26,582 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:45:26,582 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:45:26,582 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:45:26,582 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:45:26,582 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:45:26,582 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:26,582 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:45:26,582 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:26,582 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:45:26,583 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,583 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:26,583 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:26,584 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:26,584 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:26,584 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:26,584 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:26,584 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:26,888 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,888 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:26,888 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:26,888 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:26,888 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:26,888 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:26,888 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:26,888 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:26,890 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,890 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:45:26,892 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,892 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:45:26,892 INFO  [stdout] (default task-3)     into
+2025-01-11 11:45:26,892 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:45:26,892 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:45:26,892 INFO  [stdout] (default task-3)     values
+2025-01-11 11:45:26,892 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:45:26,907 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,908 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:26,908 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:45:26,908 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:45:26,908 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:45:26,908 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:45:26,908 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:45:26,908 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:45:26,908 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:26,908 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:45:26,908 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:26,908 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:45:26,909 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:26,910 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:26,910 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:26,910 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:26,910 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:26,910 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:26,910 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:26,910 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:27,241 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,241 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:27,241 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:27,241 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:27,241 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:27,241 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:27,241 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:27,241 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:27,244 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,244 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:45:27,245 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,245 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:45:27,245 INFO  [stdout] (default task-3)     into
+2025-01-11 11:45:27,246 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:45:27,246 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:45:27,246 INFO  [stdout] (default task-3)     values
+2025-01-11 11:45:27,246 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:45:27,265 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,265 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:27,265 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:45:27,265 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:45:27,265 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:45:27,265 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:45:27,265 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:45:27,265 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:45:27,265 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:27,265 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:45:27,265 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:27,265 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:45:27,268 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,268 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:27,269 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:27,269 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:27,269 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:27,269 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:27,269 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:27,269 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:27,409 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,409 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:27,409 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:27,409 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:27,410 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:27,410 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:27,410 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:27,410 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:27,413 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,413 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:45:27,415 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,415 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:45:27,415 INFO  [stdout] (default task-3)     into
+2025-01-11 11:45:27,415 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:45:27,415 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:45:27,415 INFO  [stdout] (default task-3)     values
+2025-01-11 11:45:27,415 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:45:27,427 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,427 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:27,427 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:45:27,427 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:45:27,427 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:45:27,427 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:45:27,427 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:45:27,427 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:45:27,427 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:27,427 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:45:27,427 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:27,427 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:45:27,429 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,429 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:27,429 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:27,429 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:27,429 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:27,429 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:27,429 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:27,429 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:27,572 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,572 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:27,572 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:27,572 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:27,572 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:27,572 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:27,572 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:27,572 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:27,574 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,574 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:45:27,575 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,575 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:45:27,575 INFO  [stdout] (default task-3)     into
+2025-01-11 11:45:27,576 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:45:27,576 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:45:27,576 INFO  [stdout] (default task-3)     values
+2025-01-11 11:45:27,576 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:45:27,590 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,590 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:27,590 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:45:27,590 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:45:27,590 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:45:27,590 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:45:27,590 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:45:27,590 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:45:27,590 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:27,590 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:45:27,590 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:27,590 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:45:27,594 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,594 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:27,594 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:27,594 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:27,594 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:27,594 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:27,594 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:27,594 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:27,722 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,722 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:27,722 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:27,722 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:27,722 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:27,722 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:27,722 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:27,722 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:27,725 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,725 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:45:27,726 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,727 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:45:27,727 INFO  [stdout] (default task-3)     into
+2025-01-11 11:45:27,727 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:45:27,727 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:45:27,727 INFO  [stdout] (default task-3)     values
+2025-01-11 11:45:27,727 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:45:27,740 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,740 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:27,740 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:45:27,740 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:45:27,740 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:45:27,740 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:45:27,740 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:45:27,741 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:45:27,741 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:27,741 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:45:27,741 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:27,741 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:45:27,742 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,742 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:27,742 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:27,742 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:27,742 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:27,742 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:27,743 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:27,743 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:27,873 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,873 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:27,873 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:27,873 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:27,873 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:27,873 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:27,873 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:27,873 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:27,874 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,875 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:45:27,876 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,876 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:45:27,876 INFO  [stdout] (default task-3)     into
+2025-01-11 11:45:27,876 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:45:27,876 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:45:27,876 INFO  [stdout] (default task-3)     values
+2025-01-11 11:45:27,876 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:45:27,891 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,891 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:27,891 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:45:27,891 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:45:27,891 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:45:27,891 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:45:27,891 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:45:27,891 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:45:27,891 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:27,891 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:45:27,891 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:27,891 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:45:27,895 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:27,896 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:27,896 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:27,896 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:27,896 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:27,896 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:27,896 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:27,896 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:28,022 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:28,022 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:28,022 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:28,022 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:28,022 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:28,022 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:28,022 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:28,022 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:28,024 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:28,024 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:45:28,026 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:28,026 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:45:28,026 INFO  [stdout] (default task-3)     into
+2025-01-11 11:45:28,026 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:45:28,026 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:45:28,026 INFO  [stdout] (default task-3)     values
+2025-01-11 11:45:28,026 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:45:28,040 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:28,040 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:28,040 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:45:28,040 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:45:28,040 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:45:28,040 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:45:28,040 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:45:28,040 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:45:28,040 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:28,040 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:45:28,040 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:28,040 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:45:28,042 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:28,042 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:28,042 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:28,042 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:28,042 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:28,042 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:28,042 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:28,042 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:28,189 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:28,189 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:28,189 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:28,189 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:28,189 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:28,189 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:28,189 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:28,189 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:28,191 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:28,191 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:45:28,193 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:28,193 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:45:28,193 INFO  [stdout] (default task-3)     into
+2025-01-11 11:45:28,193 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:45:28,193 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:45:28,193 INFO  [stdout] (default task-3)     values
+2025-01-11 11:45:28,193 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:45:28,207 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:28,207 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:28,207 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:45:28,207 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:45:28,207 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:45:28,207 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:45:28,207 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:45:28,207 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:45:28,207 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:28,207 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:45:28,207 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:28,207 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:45:28,210 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:28,210 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:28,210 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:28,210 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:28,210 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:28,210 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:28,210 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:28,210 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:28,320 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:28,320 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:28,320 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:28,320 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:28,320 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:28,320 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:28,320 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:28,320 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 11:45:28,322 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:28,322 INFO  [stdout] (default task-3)     call next value for hibernate_sequence
+2025-01-11 11:45:28,323 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:28,323 INFO  [stdout] (default task-3)     insert 
+2025-01-11 11:45:28,323 INFO  [stdout] (default task-3)     into
+2025-01-11 11:45:28,323 INFO  [stdout] (default task-3)         Hit
+2025-01-11 11:45:28,323 INFO  [stdout] (default task-3)         (owner, r, success, x, y, id) 
+2025-01-11 11:45:28,323 INFO  [stdout] (default task-3)     values
+2025-01-11 11:45:28,323 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2025-01-11 11:45:28,336 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:28,336 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:28,336 INFO  [stdout] (default task-3)         hit0_.id as id1_0_,
+2025-01-11 11:45:28,336 INFO  [stdout] (default task-3)         hit0_.owner as owner6_0_,
+2025-01-11 11:45:28,336 INFO  [stdout] (default task-3)         hit0_.r as r2_0_,
+2025-01-11 11:45:28,336 INFO  [stdout] (default task-3)         hit0_.success as success3_0_,
+2025-01-11 11:45:28,336 INFO  [stdout] (default task-3)         hit0_.x as x4_0_,
+2025-01-11 11:45:28,336 INFO  [stdout] (default task-3)         hit0_.y as y5_0_ 
+2025-01-11 11:45:28,336 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:28,337 INFO  [stdout] (default task-3)         Hit hit0_ 
+2025-01-11 11:45:28,337 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:28,337 INFO  [stdout] (default task-3)         hit0_.owner=?
+2025-01-11 11:45:28,339 INFO  [stdout] (default task-3) Hibernate: 
+2025-01-11 11:45:28,340 INFO  [stdout] (default task-3)     select
+2025-01-11 11:45:28,340 INFO  [stdout] (default task-3)         user0_.username as username1_1_0_,
+2025-01-11 11:45:28,340 INFO  [stdout] (default task-3)         user0_.password as password2_1_0_ 
+2025-01-11 11:45:28,340 INFO  [stdout] (default task-3)     from
+2025-01-11 11:45:28,340 INFO  [stdout] (default task-3)         userr user0_ 
+2025-01-11 11:45:28,340 INFO  [stdout] (default task-3)     where
+2025-01-11 11:45:28,340 INFO  [stdout] (default task-3)         user0_.username=?
+2025-01-11 16:30:39,562 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0272: Suspending server
+2025-01-11 16:30:39,588 INFO  [org.jboss.as.ejb3] (Thread-2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-01-11 16:30:39,595 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2025-01-11 16:30:39,623 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = lab4.war_org.postgresql.Driver_42_5
+2025-01-11 16:30:39,641 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2025-01-11 16:30:39,648 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 80) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2025-01-11 16:30:39,677 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2025-01-11 16:30:39,698 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 89) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'lab4.war#default'
+2025-01-11 16:30:39,708 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 89) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@554fa47c
+2025-01-11 16:30:39,712 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 89) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'lab4.war#default'
+2025-01-11 16:30:39,713 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2025-01-11 16:30:39,716 INFO  [org.infinispan.manager.DefaultCacheManager] (ServerService Thread Pool -- 89) Stopping cache manager null on null
+2025-01-11 16:30:39,718 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2025-01-11 16:30:39,734 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTP listener default suspending
+2025-01-11 16:30:39,734 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTPS listener https suspending
+2025-01-11 16:30:39,734 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2025-01-11 16:30:39,734 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2025-01-11 16:30:39,735 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 2.2.5.Final stopping
+2025-01-11 16:30:39,765 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 93) WFLYCLINF0003: Stopped http-remoting-connector cache from ejb container
+2025-01-11 16:30:39,766 INFO  [org.infinispan.manager.DefaultCacheManager] (ServerService Thread Pool -- 93) Stopping cache manager null on null
+2025-01-11 16:30:39,769 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment lab4.war (runtime-name: lab4.war) in 163ms
+2025-01-11 16:30:39,774 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly Full 23.0.0.Final (WildFly Core 15.0.0.Final) stopped in 171ms
