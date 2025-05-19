@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab4.beans.HitTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-05-19T15:40:06" hostname="MacBook-Air-Sasa-2.local" time="0.018">
+  <properties/>
+  <testcase name="testToJSONObject()" classname="lab4.beans.HitTest" time="0.016"/>
+  <testcase name="testHitSuccess()" classname="lab4.beans.HitTest" time="0.001"/>
+  <testcase name="testHitFail()" classname="lab4.beans.HitTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

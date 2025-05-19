@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="lab4.ExampleTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-05-10T18:16:07" hostname="MacBook-Air-Sasa-2.local" time="0.009">
+<testsuite name="lab4.ExampleTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-05-19T15:40:06" hostname="MacBook-Air-Sasa-2.local" time="0.002">
   <properties/>
-  <testcase name="simpleTest()" classname="lab4.ExampleTest" time="0.008"/>
+  <testcase name="simpleTest()" classname="lab4.ExampleTest" time="0.001"/>
   <testcase name="simpleTest2()" classname="lab4.ExampleTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
