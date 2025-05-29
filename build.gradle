@@ -16,65 +16,112 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
-    testImplementation 'com.h2database:h2:2.2.224'
 
+
+sourceSets {
+    integrationTest {
+        java {
+            compileClasspath += main.output + test.output
+            runtimeClasspath += main.output + test.output
+            srcDir file('src/integrationTest/java')
+        }
+        resources.srcDir file('src/integrationTest/resources')
+    }
+}
+
+configurations {
+    integrationTestImplementation.extendsFrom testImplementation
+    integrationTestRuntimeOnly.extendsFrom testRuntimeOnly
+}
+
+
+
+
+// ===== Dependencies =====
+dependencies {
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+
+    integrationTestImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.1'
+    integrationTestRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.1'
+
+// Selenium
+    integrationTestImplementation 'org.seleniumhq.selenium:selenium-java:4.8.3'
+
+// WebDriverManager
+    integrationTestImplementation 'io.github.bonigarcia:webdrivermanager:5.6.3'
+
+
+
+    // DB & Backend
+    testImplementation 'com.h2database:h2:2.2.224'
     compileOnly 'org.projectlombok:lombok:1.18.12'
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
-
     compileOnly 'javax:javaee-api:8.0'
-
+    implementation 'org.glassfish:javax.json:1.1.4'
     implementation 'commons-codec:commons-codec:1.11'
     implementation 'io.jsonwebtoken:jjwt:0.9.1'
     runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.2'
-
     implementation 'javax.persistence:javax.persistence-api:2.2'
     implementation 'org.postgresql:postgresql:42.5.1'
     implementation 'org.hibernate:hibernate-core:5.4.20.Final'
     implementation 'org.hibernate.validator:hibernate-validator:6.1.6.Final'
 }
 
+// ===== Compilation =====
 tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
     options.annotationProcessorGeneratedSourcesDirectory = file("$buildDir/generated/sources/annotationProcessor/java/main")
 }
+
+// ===== Testing =====
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+    dependsOn compileJava
+}
+
+
+
+
 
 war {
     archiveFileName = 'lab4.war'
 }
 
-// =============== 1) compile (done)================
 
-// Псевдоним для совместимости: ./gradlew compile будет вызывать compileJavaTask
+// =============== compile ================
+
+
 tasks.register('compile') {
     group = 'build'
-    description = 'Алиас для compileJavaTask'
     dependsOn 'compileJavaTask'
 }
 
 task compileJavaTask {
     group = 'build'
-    description = 'Компиляция исходных кодов проекта'
-    dependsOn 'compileJava' // Задача зависит от стандартной задачи compileJava
+    dependsOn 'compileJava'
 }
 
-// =============== 2) build (done)================
+// =============== build ================
 
 tasks.register('build_') {
     group = 'build'
-    description = 'Алиас для buildProject'
     dependsOn 'buildProject'
 }
 
 task buildProject {
-    dependsOn compileJavaTask // Обеспечиваем зависимость от compileJavaTask
-    dependsOn war // Включаем создание war-архива в build
+    dependsOn compileJavaTask
+    dependsOn war
     doLast {
         println 'Проект собран и упакован.'
     }
 }
 
-// =============== 3) clean(done) ================
+// =============== clean ================
 clean {
     doLast {
         delete rootProject.buildDir
@@ -82,16 +129,16 @@ clean {
     }
 }
 
-// =============== 4) test (done in gradle, tests must be written)================
+// =============== test ================
 test {
-    useJUnitPlatform() // обязательно для JUnit 5
+    useJUnitPlatform()
     testLogging {
         events "passed", "skipped", "failed"
     }
-    dependsOn compileJavaTask // Зависимость от компиляции перед тестами
+    dependsOn compileJavaTask
 }
 
-// =============== 5) music (done)================
+// =============== music ================
 task music {
     dependsOn buildProject
     group = 'custom'
@@ -109,7 +156,7 @@ task music {
     }
 }
 
-// =============== 6) native2ascii (done)================
+// =============== native2ascii ================
 task native2asciiAll {
     group = 'conversion'
     description = 'Конвертация всех JSON-файлов локализации в формат ASCII для тестирования.'
@@ -137,9 +184,7 @@ task native2asciiAll {
 }
 
 
-
-
-// =============== 7) xml (done) ================
+// =============== xml  ================
 task xml {
     group = 'verification'
     description = 'Проверка всех XML файлов на валидность'
@@ -157,7 +202,7 @@ task xml {
     }
 }
 
-// =============== 8) doc (done) ================
+// =============== 8) doc ================
 task doc {
     dependsOn javadoc
     doLast {
@@ -173,7 +218,7 @@ task doc {
                 writer.println("${relPath}-MD5: ${md5}")
                 writer.println("${relPath}-SHA1: ${sha1}")
 
-                // Вывод в терминал:
+
                 println "${relPath}"
                 println "  MD5 : ${md5}"
                 println "  SHA1: ${sha1}"
@@ -186,7 +231,7 @@ task doc {
 
 
 
-// =============== 9) scp (done) ================
+// =============== scp ================
 task scp {
     dependsOn buildProject
     doLast {
@@ -198,25 +243,7 @@ task scp {
 
 
 
-
-// =============== 10) env ================
-task env {
-    def params = file('env.properties').readLines()
-    doLast {
-        javaexec {
-            executable = params.find { it.startsWith('java=') }?.split('=')[1]
-            jvmArgs = params.findAll { it.startsWith('args=') }*.split('=')[1]
-            classpath = sourceSets.main.runtimeClasspath
-            if (project.hasProperty("mainClassName")) {
-                mainClass = mainClassName
-            } else {
-                println "mainClassName не задан — запуск пропущен."
-            }
-        }
-    }
-}
-
-// =============== 11) report (done) ================
+// =============== report ================
 task report {
     dependsOn test
     doLast {
@@ -238,7 +265,6 @@ task report {
             return
         }
 
-        // Теперь git add из папки reports/test-results
         exec {
             commandLine 'git', 'add', 'reports/test-results'
         }
@@ -246,31 +272,53 @@ task report {
 
         exec {
             commandLine 'git', 'commit', '-m', 'Добавлен отчет о прохождении тестов'
-            ignoreExitValue true  // на случай, если нет изменений
+            ignoreExitValue true
         }
         println "Отчёты успешно добавлены в git из папки ${reportDir}"
     }
 }
 
 
-
-
 // =============== 12) alt ================
 task alt {
-    dependsOn buildProject
     doLast {
-        def altSrc = file('src_alt')
+        def altSrc = file("$buildDir/altSrc")
+
         copy {
-            from 'src'
+            from 'src/main/java'
             into altSrc
             include '**/*.java'
-            filter { line -> line.replaceAll('Main', 'MainAlt').replaceAll('myVar', 'myAltVar') }
+            filter { line ->
+                line
+                        .replaceAll('\\bMain\\b', 'MainAlt')           // заменим имя класса
+                        .replaceAll('\\bmyVar\\b', 'myAltVar')         // заменим имя переменной
+            }
         }
-        println 'Создана альтернативная версия кода.'
+
+        println 'Создана альтернативная версия исходников.'
     }
 }
 
-// =============== 13) history(done) ================
+
+task compileAlt(type: JavaCompile) {
+    dependsOn alt
+    source = file("$buildDir/altSrc")
+    destinationDirectory = file("$buildDir/classes-alt")
+    classpath = sourceSets.main.compileClasspath
+}
+
+
+task altJar(type: Jar) {
+    dependsOn compileAlt
+    archiveBaseName.set('alt')
+    destinationDirectory.set(file("$buildDir/libs"))
+    from compileAlt.destinationDirectory
+
+}
+
+
+
+// =============== history ================
 task history {
     doLast {
         def success = false
@@ -292,13 +340,13 @@ task history {
     }
 }
 
-// =============== 14) team(done) ================
+// =============== team ================
 task team {
     doLast {
         def revisions = ['HEAD~1', 'HEAD~2', 'HEAD~3', 'HEAD~4']
         def availableRevisions = []
 
-        // Проверяем, какие ревизии действительно существуют
+
         revisions.each { rev ->
             def check = ['git', 'rev-parse', '--verify', rev].execute()
             check.waitFor()
@@ -314,7 +362,7 @@ task team {
             return
         }
 
-        // Создаём директорию под сборки
+
         file("teamBuilds").mkdirs()
 
         availableRevisions.eachWithIndex { rev, i ->
@@ -324,13 +372,13 @@ task team {
             exec { commandLine 'git', 'worktree', 'add', workDir.absolutePath, rev }
 
             try {
-                // Сборка в worktree
+
                 exec {
                     workingDir workDir
                     commandLine './gradlew', 'build'
                 }
 
-                // Копируем артефакты
+
                 copy {
                     from "${workDir}/build/libs"
                     into "teamBuilds/rev${i + 1}"
@@ -339,12 +387,12 @@ task team {
             } catch (Exception e) {
                 println "Сборка или копирование не удалось для ${rev}: ${e.message}"
             } finally {
-                // Удаляем worktree независимо от успеха
+
                 exec { commandLine 'git', 'worktree', 'remove', '--force', workDir.absolutePath }
             }
         }
 
-        // Упаковываем zip, если есть что паковать
+
         if (file("teamBuilds").listFiles().find { it.isDirectory() && it.name.startsWith("rev") }) {
             ant.zip(destfile: "teamBuilds/team.zip", basedir: "teamBuilds") {
                 fileset(dir: "teamBuilds") {
@@ -362,7 +410,7 @@ task team {
 
 
 
-// =============== 15) diff ================
+// =============== diff ================
 task diff {
     doLast {
         def paramFile = file("exclude_classes.txt").readLines()
@@ -378,3 +426,22 @@ task diff {
         }
     }
 }
+
+
+
+
+
+task integrationTest(type: Test) {
+    description = 'Запускает интеграционные тесты с Selenium.'
+    group = 'verification'
+    testClassesDirs = sourceSets.integrationTest.output.classesDirs
+    classpath = sourceSets.integrationTest.runtimeClasspath
+    shouldRunAfter test
+
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+check.dependsOn integrationTest
